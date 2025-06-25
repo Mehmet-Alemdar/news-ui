@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Merkezi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="date-time">
+                <span id="currentDate"></span>
+                <span>•</span>
+                <span id="currentTime"></span>
+            </div>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">HABER<span>MERKEZİ</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-item"><a href="#home">Ana Sayfa</a></li>
+                <li class="nav-item">
+                    <a href="#politics">
+                        Politika
+                        <span class="dropdown-icon">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#local-politics">Yerel Politika</a>
+                        <a href="#parliament">Meclis Haberleri</a>
+                        <a href="#elections">Seçimler</a>
+                        <a href="#government">Hükümet</a>
+                        <a href="#opposition">Muhalefet</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#economy">
+                        Ekonomi
+                        <span class="dropdown-icon">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#markets">Piyasalar</a>
+                        <a href="#banking">Bankacılık</a>
+                        <a href="#currency">Döviz</a>
+                        <a href="#real-estate">Emlak</a>
+                        <a href="#business">İş Dünyası</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#sports">
+                        Spor
+                        <span class="dropdown-icon">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#football">Futbol</a>
+                        <a href="#basketball">Basketbol</a>
+                        <a href="#volleyball">Voleybol</a>
+                        <a href="#olympics">Olimpiyatlar</a>
+                        <a href="#other-sports">Diğer Sporlar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#world">
+                        Dünya
+                        <span class="dropdown-icon">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#europe">Avrupa</a>
+                        <a href="#middle-east">Ortadoğu</a>
+                        <a href="#america">Amerika</a>
+                        <a href="#asia">Asya</a>
+                        <a href="#africa">Afrika</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="breaking-news">
+            <span class="breaking-label">Son Dakika</span>
+            <span class="breaking-text">Türkiye ekonomisinde yeni gelişmeler: Merkez Bankası faiz kararını açıkladı</span>
+        </div>
+
+        <div class="news-grid">
+            <article class="news-item news-item-1">
+                <div class="news-image">
+                    <img src="https://cdn.mos.cms.futurecdn.net/xbHtcdhwi8hRvXYVtZNbbh.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Gündem</span>
+                    <h3 class="news-title">Başlıca Haber Başlığı: Önemli Gelişmeler Yaşanıyor</h3>
+                    <div class="news-meta">
+                        <span class="news-author">Editör</span>
+                        <span class="news-time">2 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-2">
+                <div class="news-image">
+                    <img src="https://e3.365dm.com/19/08/2048x1152/skynews-political-adverts-facebook_4746547.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Politika</span>
+                    <h3 class="news-title">Meclis'te Önemli Oturum</h3>
+                    <div class="news-meta">
+                        <span class="news-author">A. Yılmaz</span>
+                        <span class="news-time">3 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-3">
+                <div class="news-image">
+                    <img src="https://s44650.pcdn.co/wp-content/uploads/2023/03/gdp-growth-region-2022-1654625402.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Ekonomi</span>
+                    <h3 class="news-title">Borsa Günü Yükselişle Tamamladı</h3>
+                    <div class="news-meta">
+                        <span class="news-author">M. Kaya</span>
+                        <span class="news-time">4 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-4">
+                <div class="news-image">
+                    <img src="https://s3.envato.com/files/439515017/Screenshot.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Dünya</span>
+                    <h3 class="news-title">Uluslararası Zirvede Kritik Kararlar Alındı</h3>
+                    <div class="news-meta">
+                        <span class="news-author">S. Özkan</span>
+                        <span class="news-time">1 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-5">
+                <div class="news-image">
+                    <img src="https://pledgeball.org/wp-content/uploads/2024/08/the-ball-stadion-football-the-pitch-46798.jpeg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Spor</span>
+                    <h3 class="news-title">Süper Lig'de Heyecan Dorukta</h3>
+                    <div class="news-meta">
+                        <span class="news-author">T. Demir</span>
+                        <span class="news-time">5 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-6">
+                <div class="news-image">
+                    <img src="https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Technology-And-Biometric-Conce-213062104_kygpiv.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Teknoloji</span>
+                    <h3 class="news-title">Yapay Zeka Alanında Yeni Gelişmeler: Türk Start-up'ı Dünya Çapında İlgi Gördü</h3>
+                    <div class="news-meta">
+                        <span class="news-author">E. Çelik</span>
+                        <span class="news-time">6 saat önce</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-item news-item-7">
+                <div class="news-image">
+                    <img src="https://bilis.com/wp-content/uploads/2017/05/traduction-et-culture-1024x768.jpg" alt="Teknoloji" style="width:100%; height:100%; object-fit:cover; border-radius: 0;">
+                </div>
+                <div class="news-content">
+                    <span class="news-category">Kültür</span>
+                    <h3 class="news-title">Film Festivalinde Büyük Ödül</h3>
+                    <div class="news-meta">
+                        <span class="news-author">L. Şahin</span>
+                        <span class="news-time">7 saat önce</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="categories-section">
+            <div class="section-title">Kategoriler</div>
+            
+            <div class="category-item">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <span>Gündem Haberleri</span>
+                    <span class="category-icon">▼</span>
+                </div>
+                <div class="category-content">
+                    <div class="category-body">
+                        <ul class="category-news-list">
+                            <li>Yeni yasal düzenlemeler meclis gündeminde</li>
+                            <li>Şehir merkezinde önemli gelişmeler yaşanıyor</li>
+                            <li>Vatandaşları ilgilendiren yeni kararlar alındı</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <span>Ekonomi Haberleri</span>
+                    <span class="category-icon">▼</span>
+                </div>
+                <div class="category-content">
+                    <div class="category-body">
+                        <ul class="category-news-list">
+                            <li>TL kurunda son durum ve analizler</li>
+                            <li>Enflasyon verilerinde dikkat çeken rakamlar</li>
+                            <li>İstihdam piyasasında pozitif sinyaller</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <div class="category-header" onclick="toggleCategory(this)">
+                    <span>Spor Haberleri</span>
+                    <span class="category-icon">▼</span>
+                </div>
+                <div class="category-content">
+                    <div class="category-body">
+                        <ul class="category-news-list">
+                            <li>Milli takımda kadro değişiklikleri</li>
+                            <li>Avrupa kupalarında Türk takımları</li>
+                            <li>Transfer döneminde son gelişmeler</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dateOptions = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const timeOptions = { 
+                hour: '2-digit', 
+                minute: '2-digit'
+            };
+            
+            document.getElementById('currentDate').textContent = 
+                now.toLocaleDateString('tr-TR', dateOptions);
+            document.getElementById('currentTime').textContent = 
+                now.toLocaleTimeString('tr-TR', timeOptions);
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 60000);
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        function toggleCategory(element) {
+            const content = element.nextElementSibling;
+            const isActive = element.classList.contains('active');
+
+            document.querySelectorAll('.category-header').forEach(header => {
+                header.classList.remove('active');
+                header.nextElementSibling.classList.remove('active');
+            });
+
+            if (!isActive) {
+                element.classList.add('active');
+                content.classList.add('active');
+            }
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    const navItem = link.closest('.nav-item');
+                    const hasDropdown = navItem && navItem.querySelector('.dropdown-menu');
+                    
+                    if (hasDropdown) {
+                        e.preventDefault();
+                        navItem.classList.toggle('mobile-active');
+                        return;
+                    }
+                }
+                
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                
+                document.querySelectorAll('.nav-item').forEach(item => {
+                    item.classList.remove('mobile-active');
+                });
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.querySelectorAll('.nav-item').forEach(item => {
+                    item.classList.remove('mobile-active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
